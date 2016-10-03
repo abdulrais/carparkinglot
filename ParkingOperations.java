@@ -6,6 +6,7 @@
 package carparkinglot;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 /**
  *
@@ -37,9 +38,9 @@ public class ParkingOperations {
     
     String status(ArrayList<Car> parkingInfo){
         StringBuilder parkingStatus = new StringBuilder();
+        parkingStatus.append("Slot No. Registration No. Colour"+ "\n");
         for(Car info: parkingInfo){
-            parkingStatus.append(Integer.toString(info.getSlotNumber())+" "+info.getRegistrationNo()+" "+info.getColor()+", ");
-            //System.out.println(parkingInfo.indexOf(info));
+            parkingStatus.append(Integer.toString(info.getSlotNumber())+"        "+info.getRegistrationNo()+"       "+info.getColor()+"\n");
         }
         if(parkingStatus.toString()!=null && !parkingStatus.toString().equals(""))
             return parkingStatus.toString();
@@ -55,6 +56,7 @@ public class ParkingOperations {
                 carSlotNumbers.append(",");
             }
         }
+        carSlotNumbers.delete(carSlotNumbers.lastIndexOf(","), carSlotNumbers.length());
         if(carSlotNumbers.toString()!=null && !carSlotNumbers.toString().equals(""))
             return carSlotNumbers.toString();
         
@@ -80,6 +82,7 @@ public class ParkingOperations {
                 carWithSameColor.append(",");
             }
         }
+        carWithSameColor.delete(carWithSameColor.lastIndexOf(","), carWithSameColor.length());
         if(carWithSameColor.toString()!=null && !carWithSameColor.toString().equals(""))
             return carWithSameColor.toString();
         

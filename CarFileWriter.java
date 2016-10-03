@@ -21,16 +21,17 @@ public class CarFileWriter {
             for(String info : output){
                 fileWriter.append(info);
                 fileWriter.append("\n");
+                fileWriter.append("\n");
             }
-            System.out.println("Ouput file was created successfully...");
+            System.out.println("Ouput file was created successfully \n");
         } catch (Exception e) {
-            System.out.println("Error in OuputFileWriter...");
+            System.out.println("Error in OuputFileWriter");
             e.printStackTrace();
         } finally {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                System.out.println("Error while closing fileWriter...");
+                System.out.println("Error while closing fileWriter");
                 e.printStackTrace();
             }
         }
