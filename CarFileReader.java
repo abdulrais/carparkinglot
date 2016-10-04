@@ -28,13 +28,13 @@ public class CarFileReader {
                 commands.add(line);
             }
         }catch(Exception e){
-            System.out.println("Error in InputFileReader");
+            System.out.println("Error in InputFileReader \n");
             e.printStackTrace();
         }finally{
             try{
                 fileReader.close();
             }catch(IOException e){
-                System.out.println("Error while closing fileReader");
+                System.out.println("Error while closing fileReader \n");
                 e.printStackTrace();
             }
         }

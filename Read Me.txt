@@ -1,0 +1,11 @@
+// I used java language to make application. Before running program you should have jdk in your system and set classpath to execute program.
+
+1. First compile all java files in terminal using, "javac carparkinglot/*.java". // carparkinglot is package name.
+2. After succssfully compiled run main java file using, "java carparkinglot/CarParkingLot" // CarParkingLot is main java file.
+3. After running the main file. Please input parameter as "input file path" and "output file path".
+4. After successfully created output file. Enter interactive command in terminal to run further program.
+5. To terminate the program just press the enter key.
+
+Important:
+1. I assumed we are entering first interactive command for creating parking lot as Example: "create_parking_lot 6".
+2. I used test cases as given in assignment pdf file(for both file read and interactive commands).

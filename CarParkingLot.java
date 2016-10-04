@@ -25,15 +25,17 @@ public class CarParkingLot {
 
         System.out.println("Please Enter Input File Path:");
         String inputFile=input.nextLine();
-        String outputFile="/Users/coarpder/Desktop/output.txt";
+
+        System.out.println("\nPlease Enter Output File Path:");
+        String outputFile=input.nextLine();
         
         ArrayList<String> parkingCommands=CarFileReader.readFile(inputFile);
         ArrayList<String> finalOutput=CarInputCommands.inputCommands(parkingCommands);
         
         CarFileWriter.writeFile(outputFile, finalOutput);  
         
-        // Using User input
-        System.out.println("Please Enter Commands For Parking Lot: ");
+        // Using User interactive commands
+        System.out.println("Please Enter Commands For Parking Lot: \n");
         int slot=0;
         String commands=input.nextLine();
         

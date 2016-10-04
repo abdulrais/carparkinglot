@@ -14,8 +14,6 @@ import java.util.ListIterator;
  */
 public class ParkingOperations {
     
-    ArrayList<String> ans=new ArrayList<>();
-    
     String parkingLotCreation(String slot){
         String parkingLot="Created a parking lot with "+slot+" slots";
         return parkingLot;

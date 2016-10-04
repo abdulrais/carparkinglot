@@ -23,15 +23,15 @@ public class CarFileWriter {
                 fileWriter.append("\n");
                 fileWriter.append("\n");
             }
-            System.out.println("Ouput file was created successfully \n");
+            System.out.println("\nOuput file was created successfully \n");
         } catch (Exception e) {
-            System.out.println("Error in OuputFileWriter");
+            System.out.println("Error in OuputFileWriter \n");
             e.printStackTrace();
         } finally {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                System.out.println("Error while closing fileWriter");
+                System.out.println("Error while closing fileWriter \n");
                 e.printStackTrace();
             }
         }
